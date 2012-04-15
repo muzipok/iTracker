@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @requirement.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @requirement.description %>
+</p>
+
+<p>
+  <b>Last changed by:</b>
+  <%= @requirement.last_changed_by %>
+</p>
+
+<p>
+  <b>Last changed at:</b>
+  <%= @requirement.last_changed_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_requirement_path(@requirement) %> |
+<%= link_to 'Back', requirements_path %>
